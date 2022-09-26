@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-segment value="mis-datos" (ionChange)="segmentChanged($event)">
+          <ion-segment-button value="mis-datos">
+              <ion-icon name="home"></ion-icon>
+          </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <!-- Aquí se desplegara todos los Component que se declararon como children en HomePageModule -->
+    <app-mis-datos></app-mis-datos>
+
+    
+</ion-content>
+<ion-button routerLink="/home">Enviar</ion-button>
